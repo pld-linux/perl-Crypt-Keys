@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	Keys
+%define		pdir	Crypt
+%define		pnam	Keys
 Summary:	Crypt::Keys Perl module - public and private key management
 Summary(pl):	Modu³ Perla Crypt::Keys - zarz±dzaj±cy kluczami publicznymi i prywatnymi
 Name:		perl-Crypt-Keys
