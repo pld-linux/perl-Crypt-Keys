@@ -1,6 +1,6 @@
 #
-#	Conditional build:
-# _without_tests - do not perform "make test"
+# Conditional build:
+%bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
@@ -59,7 +59,7 @@ wygenerowaæ nowych kluczy ani odszyfrowaæ czy zaszyfrowaæ danych.
 	< /dev/null
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
