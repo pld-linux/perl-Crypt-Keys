@@ -1,3 +1,7 @@
+#
+#	Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	Keys
@@ -48,9 +52,12 @@ wygenerowaæ nowych kluczy ani odszyfrowaæ czy zaszyfrowaæ danych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-echo 3 | perl Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor \
+	< /dev/null
 %{__make}
-%{__make} test
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
