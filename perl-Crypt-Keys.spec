@@ -5,7 +5,7 @@ Summary:	Crypt::Keys Perl module - public and private key management
 Summary(pl):	Modu³ Perla Crypt::Keys - zarz±dzaj±cy kluczami publicznymi i prywatnymi
 Name:		perl-Crypt-Keys
 Version:	0.06
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,7 +17,7 @@ BuildRequires:	perl-Data-Buffer
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-Math-Pari >= 2.001804
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	perl-Convert-PEM >= 0.05
 Requires:	perl-Crypt-CBC >= 2.00
 Requires:	perl-Math-Pari >= 2.001804
