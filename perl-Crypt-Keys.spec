@@ -9,7 +9,7 @@ Summary:	Crypt::Keys Perl module - public and private key management
 Summary(pl):	Modu³ Perla Crypt::Keys - zarz±dzaj±cy kluczami publicznymi i prywatnymi
 Name:		perl-Crypt-Keys
 Version:	0.06
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
