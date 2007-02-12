@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Keys
 Summary:	Crypt::Keys Perl module - public and private key management
-Summary(pl):	Modu³ Perla Crypt::Keys - zarz±dzaj±cy kluczami publicznymi i prywatnymi
+Summary(pl.UTF-8):   ModuÅ‚ Perla Crypt::Keys - zarzÄ…dzajÄ…cy kluczami publicznymi i prywatnymi
 Name:		perl-Crypt-Keys
 Version:	0.06
 Release:	3
@@ -40,15 +40,15 @@ keys that it manages. In other words, you can use it to read and write
 your DSA/RSA/etc. keys, but it does not generate new keys or
 encrypt/sign data.
 
-%description -l pl
-Crypt::Keys to system do zarz±dzania kluczami publicznymi i prywatnymi
-przechowywanymi na dysku. Celem tego modu³u jest umo¿liwienie odczytu
+%description -l pl.UTF-8
+Crypt::Keys to system do zarzÄ…dzania kluczami publicznymi i prywatnymi
+przechowywanymi na dysku. Celem tego moduÅ‚u jest umoÅ¼liwienie odczytu
 i zapisu kluczy kryptograficznych o dowolnym kodowaniu (PEM, SSH
-itd.). Mo¿e byæ u¿ywany jako interfejs do zarz±dzania kluczami, ale
-nie zawiera implementacji ¿adnego algorytmu kryptograficznego
-reprezentowanego przez klucze, którymi zarz±dza. Innymi s³owy, potrafi
-odczytywaæ i zapisywaæ klucze DSA/RSA/itp., ale nie jest w stanie
-wygenerowaæ nowych kluczy ani odszyfrowaæ czy zaszyfrowaæ danych.
+itd.). MoÅ¼e byÄ‡ uÅ¼ywany jako interfejs do zarzÄ…dzania kluczami, ale
+nie zawiera implementacji Å¼adnego algorytmu kryptograficznego
+reprezentowanego przez klucze, ktÃ³rymi zarzÄ…dza. Innymi sÅ‚owy, potrafi
+odczytywaÄ‡ i zapisywaÄ‡ klucze DSA/RSA/itp., ale nie jest w stanie
+wygenerowaÄ‡ nowych kluczy ani odszyfrowaÄ‡ czy zaszyfrowaÄ‡ danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
