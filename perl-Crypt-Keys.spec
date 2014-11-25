@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# Do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Crypt
 %define		pnam	Keys
+%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::Keys Perl module - public and private key management
 Summary(pl.UTF-8):	Moduł Perla Crypt::Keys - zarządzający kluczami publicznymi i prywatnymi
 Name:		perl-Crypt-Keys
@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6c375a9d965ff86d3ae967b9e6bbaf36
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Crypt-Keys/
 BuildRequires:	perl-Convert-PEM >= 0.05
 BuildRequires:	perl-Crypt-CBC >= 2.00
 BuildRequires:	perl-Crypt-DES
@@ -23,6 +23,7 @@ BuildRequires:	perl-Data-Buffer
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-Math-Pari >= 2.001804
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Convert-PEM >= 0.05
 Requires:	perl-Crypt-CBC >= 2.00
