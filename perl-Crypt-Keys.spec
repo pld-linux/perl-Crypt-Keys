@@ -4,7 +4,6 @@
 
 %define		pdir	Crypt
 %define		pnam	Keys
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::Keys Perl module - public and private key management
 Summary(pl.UTF-8):	Moduł Perla Crypt::Keys - zarządzający kluczami publicznymi i prywatnymi
 Name:		perl-Crypt-Keys
